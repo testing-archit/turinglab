@@ -1,0 +1,10 @@
+services:
+  turinglab:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      - PORT=8080
+      - TURINGLAB_DATA=/data/db.json
+    volumes: ["turinglab-data:/data"]
+volumes:
+  turinglab-data:
