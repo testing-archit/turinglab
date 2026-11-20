@@ -1,0 +1,13 @@
+{
+  "name": "turinglab",
+  "version": "1.0.0",
+  "description": "TuringLab - Turing Machine design, simulation and visualization platform",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "express": "^4.21.2" }
+}
